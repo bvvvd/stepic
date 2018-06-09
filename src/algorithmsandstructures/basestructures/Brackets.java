@@ -1,6 +1,9 @@
 package algorithmsandstructures.basestructures;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+import java.util.Stack;
 import java.util.stream.Collectors;
 
 class Brackets {
@@ -55,8 +58,8 @@ class Brackets {
 
         System.out.println(
                 stack.isEmpty()
-                ? "Success"
-                : stack.pop().position);
+                        ? "Success"
+                        : stack.pop().position);
     }
 
     private static boolean pair(Stack<Element> stack, Element element) {
